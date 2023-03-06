@@ -2,10 +2,11 @@
 /**
  * Primeras páginas. Sin formularios. 2 - primeras-paginas-2.php
  *
- * @author Escriba aquí su nombre
+ * @author Álvaro
  *
  */
-
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
-
+print "<body>\n";
+print "<h1>Mi primer programa";
+print "\n";
+print "<p>Hola Mundo!</p>\n";
 ?>
