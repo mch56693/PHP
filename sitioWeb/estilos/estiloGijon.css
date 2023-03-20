@@ -1,0 +1,336 @@
+header {
+    color: brown;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    padding: 20px;
+    font-size: xx-large;
+    float: left;
+    width: 700px;
+    padding: 0;
+    margin: 0;
+}
+.header {
+    width: 1080px;
+    margin: 0 auto;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 420px;
+}
+div.gallery2 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 700px;
+}
+
+div.gallery3 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 575px;
+}
+
+div.gallery4 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float:left;
+    width: 375px;
+}
+
+div.gallery5 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float:right;
+    width: 375px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+} 
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 2px;
+    text-align: left;
+    font-style: italic;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+  
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.active {
+    background-color: red;
+}
+.active2 {
+    background-color: rgb(56, 31, 31);
+    color: white;
+    border: solid 2px black;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    border: solid 1px brown;
+}
+caption {
+    background-color: brown;
+    margin: 0;
+    border: solid 1px #333333;
+    border-bottom: none;
+    padding: 6px 16px;
+    font-weight: bold;
+    color: white;
+}
+h2 {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+body{
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+p {
+    line-height: 1.5;
+    color: black;
+}
+.tamañoTabla {
+    max-width: 900px;
+}
+th{
+    border-collapse: collapse;
+    border: solid 1px brown;
+    padding: 0,5em;
+    color: white;
+    text-align: left;
+    background-color: rgba(165, 42, 42, 0.726);
+}
+td{
+    padding: 0,25em;
+    text-align: center;
+    font-size: smaller;    
+}
+.filasNumero{
+    background-color: rgba(165, 42, 42, 0.877);
+    text-align: center;
+}
+.filasNumero1{
+    text-align: center;
+}
+.filasColor{
+    background-color: rgba(165, 42, 42, 0.877);
+    max-width: 100px;
+}
+.filasColor1{
+    max-width: 100px;
+}
+.filasHeader{
+    background-color: brown;
+    border: solid 1px #333333;
+    padding: 6px 16px;
+    font-weight: bold;
+    border-bottom: none;
+    color: white;
+    text-align: left;
+}
+.filasHeader2{
+    background-color: brown;
+    border: solid 1px #333333;
+    padding: 6px 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.filaRojo{
+    background-color: red;
+    color: white;
+    max-width: 175px;
+
+}
+.filaAzul{
+    background-color: rgb(68, 68, 211);
+    color: white;
+    max-width: 175px;
+}
+.color1{
+    background-color: #FF6400;
+}
+.color2{
+    background-color: #FF6400;
+}
+.color3{
+    background-color: #FF3C00;
+}
+.color4{
+    background-color: #FF3C00;
+}
+.color5{
+    background-color: #FF2800;
+}
+.color6{
+    background-color: #FF0000;
+}
+.color7{
+    background-color: #FF2800;
+}
+.color8{
+    background-color: #FF2800;
+}
+.color9{
+    background-color: #FF1400;
+}
+.color10{
+    background-color: #FF2800;
+}
+.color11{
+    background-color: #FF5000;
+}
+.color12{
+    background-color: #FF5000;
+}
+.color13{
+    font-weight: bold;
+    background-color: #FF0000;
+}
+.color14{
+    font-weight: bold;
+    background-color: #FFA500;
+}
+.color15{
+    font-weight: bold;
+    background-color: #FF9900;
+}
+.color16{
+    font-weight: bold;
+    background-color: #FF8C00;
+}
+.color18{
+    font-weight: bold;
+    background-color: #FFFF99;
+}
+.color19{
+    font-weight: bold;
+    background-color: #FFCC66;
+}
+.color20{
+    font-weight: bold;
+    background-color: #FFFFCC;
+}
+.color21{
+    font-weight: bold;
+    background-color: #B4C8FF;
+}
+.color22{
+    font-weight: bold;
+    background-color: #DCF0FF;
+}
+.color23{
+    font-weight: bold;
+    background-color: #F0FFFF;
+}
+.color24{
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+.color25{
+    font-weight: bold;
+    background-color: #C8DCFF;
+}
+.color26{
+    font-weight: bold;
+    background-color: #7474FF;
+}
+.color27{
+    font-weight: bold;
+    background-color: #9494FF;
+}
+.color28{
+    font-weight: bold;
+    background-color: #8282FF;
+}
+.color29{
+    font-weight: bold;
+    background-color: #B0B0FF;
+}
+.color30{
+    font-weight: bold;
+    background-color: #6666FF;
+}
+.color31{
+    font-weight: bold;
+    background-color: #4646FF;
+}
+.color32{
+    font-weight: bold;
+    background-color: #508CFF;
+}
+.color33{
+    font-weight: bold;
+    background-color: #A0C8F0;
+}
+.color34{
+    font-weight: bold;
+    background-color: #a89f73;
+}
+.color35{
+    font-weight: bold;
+    background-color: #b3a973;
+}
+.color36{
+    font-weight: bold;
+    background-color: #beb271;
+}
+.color37{
+    font-weight: bold;
+    background-color: #c9bb6d;
+}
+.color38{
+    font-weight: bold;
+    background-color: #d3c368;
+}
+.color39{
+    font-weight: bold;
+    background-color: #dccb61;
+}
+.color40{
+    font-weight: bold;
+    background-color: #e5d357;
+}
+.color41{
+    font-weight: bold;
+    background-color: #9b9471;
+}
+tfoot td{
+    text-align: center;
+    font-style: italic;
+    font-size: 0,75em;
+    border: solid 1px brown;
+}

@@ -25,9 +25,12 @@
   <p>Actualice la página para mostrar un nuevo animal.</p>
 
 <?php
+$dibujos = ["ballena.svg", "caballito-mar.svg", "camello.svg", "cebra.svg"];
+$nombres = ["Ballena", "Caballito-mar", "Camello", "Cebra"];
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
-
+$animal = rand(0, count($dibujos) - 1);
+print "  <h2>$nombres[$animal]<h2>";
+print "  <p><img src = \"img/animales/$dibujos[$animal]\"  alt=\"$nombres[$animal]\" height=\"250\"></p>\n";
 ?>
 
   <footer>

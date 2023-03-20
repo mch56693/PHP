@@ -26,9 +26,10 @@
 <?php
 
 $dado = rand (1,6);
+
 $nombre = ["", "uno", "dos", "tres", "cuatro", "cinco", "seis"];
 
-print " <p><img src = \"img/$dado.svg\" alt=\"$dado\" width=\"140\" height=\"140\"></p>\n">; 
+print " <p><img src = \"img/$dado.svg\" alt=\"$dado\" width=\"140\" height=\"140\"></p>\n"; 
 print " \n";
 print " <p>Ha sacado un <b>$nombre[$dado]</b>.</p>\n";
 

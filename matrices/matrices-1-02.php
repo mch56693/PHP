@@ -2,7 +2,7 @@
 /**
  * Matrices (1) 2 - matrices-1-02.php
  *
- * @author Escriba aquí su nombre
+ * @author Álvaro
  *
  */
 ?>
@@ -25,17 +25,15 @@
   <p>Actualice la página para mostrar un nuevo animal.</p>
 
 <?php
-$animal = rand(0, count($dibujos) - 1);
 $dibujos = ["ballena.svg", "caballito-mar.svg", "camello.svg", "cebra.svg"];
-$nombres = ["ballena", "caballito-mar", "camello", "cebra"];
 
+$animal = rand(0, count($dibujos) - 1);
 
-print "  <p><img src = \"img/animales/$dibujos[$animal]\"  alt=\"$nombres[$animal]\" height=\"250\"></p>\n">;
-
+print "  <p><img src = \"img/animales/$dibujos[$animal]\"  alt=\"Animal\" height=\"250\"></p>\n";
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Álvaro Fernández Rodríguez</p>
   </footer>
 </body>
 </html>
