@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilos/1.css" title="Color">
+    <link rel="icon" type="image/x-icon" href="imagenes/gijonFavicom.png">
     <title>Gijón | Página principal</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
-    </style>
 </head>
     <body>
         <div id="wrapper">
@@ -28,8 +26,70 @@
                 </div>
             </nav>
 
-            <main>
-                <div id="main">
+        <aside>
+            <form action="fromGijon.php" method="get">
+
+                <fieldset class="completa">
+                    <p><strong>¿Desea conertar una cita?</strong></p>
+                <fieldset>
+                    <legend>Datos del solicitante</legend>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre"><br>
+                    <label for="apellidos">Apellidos:</label><br>
+                    <input type="text" id="apellidos" name="apellidos"><br>
+                    <br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="pswrd">Contraseña:</label>
+                    <input type="password" id="pswrd" name="pswrd">
+                    <br><br>
+                    <i class="txtForm">Longitud minima de 6 caracteres</i>
+                    <br>
+                </fieldset><br>
+        
+                <fieldset>
+                    <legend>Razones de la cita</legend>
+                    <label for="razon">Administrativas</label>
+                    <input type="radio" value="administrativa" name="razon">
+                    <br>
+                    <label for="razon">Informativa</label>
+                    <input type="radio" value="informativa" name="razon">
+                    <br>
+                    <label for="razon">Otros</label>
+                    <input type="radio" value="otro" name="razon">
+                    <br>
+                </fieldset>
+        
+                <p><strong>Datos sobre la cita</strong></p>
+
+                <fieldset>
+                    <legend>Centro a acudir</legend>
+                    <select name="centro">
+                        <option value="que este disponible">...</option>
+                        <option value="Zona Centro">Centro</option>
+                        <option value="Moreda">Moreda</option>
+                        <option value="Gijon Sur">Gijon Sur</option>
+                        <option value="Llano">Llano</option>
+                        <option value="Barrio La Arena">Barrio La Arena</option>
+                        <option value="Viesques">Viesques</option>
+                      </select>
+                </fieldset><br>
+        
+                <fieldset>
+                    <legend>Otros</legend>
+                    <textarea rows="5" cols="25" name="otro" placeholder="Concrete aqui las razones de su visita."></textarea>
+                    <br>
+                    <label for="info">Deseo recibir información sobre ofertas y novedades</label>
+                    <input type="checkbox" id="info" name="info">
+                </fieldset>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </fieldset>
+            </form>
+        </aside>
+            <div id="main">
+                <main>
                     <h2>Introducción</h2>
                     
                     <div class="gallery">
@@ -55,7 +115,7 @@
                     Hasta fechas recientes, Gijón tuvo un carácter eminentemente industrial, lo que favoreció su gran crecimiento de los siglos xix y xx. 
                     No obstante, durante las últimas décadas, la crisis de la siderurgia y el sector naval han llevado a la <b>reconversión</b> de su tejido productivo, 
                     transformando la ciudad en un centro turístico, universitario, comercial y de I+D+i. Así, además de contar con una red municipal de museos, 
-                    alberga la <b>Milla del Conocimiento Margarita Salas</b>. Esta comprende el complejo cultural de la <a href="./universidad-laboral.html">Universidad Laboral</a>, 
+                    alberga la <b>Milla del Conocimiento Margarita Salas</b>. Esta comprende el complejo cultural de la <a href="universidad-laboral.html">Universidad Laboral</a>, 
                     un <b>campus universitario</b> y un <b>parque científico y tecnológico</b>.<sup>10</sup></p>
                     <p></p>
                     <p>La ciudad es conocida por antonomasia como «capital de la <b>Costa Verde</b>» y es asimismo capital de la <b>provincia marítima de Gijón</b>. 
@@ -84,16 +144,14 @@
     Villaviciosa, Sariego y Siero.</p>
     
 
+    <br><br><br>
+
     <div class="gallery2">
         <a target="_blank" href="img_5terre.jpg">
           <img src="imagenes/sanLorenzo.jpg" alt="San Lorenzo" width="700" height="500">
         </a>
         <div class="desc">fotografía hecha en la playa de San Lorenzo de Gijón</div>
     </div>
-
-    <p>
-        <br />
-    </p>
 
     <h3>Hidrografía</h3>
 
@@ -287,7 +345,7 @@
             </tr>
         </tbody>  
     </table>
-
+<br><br><br>
     <div id="Administracion y política"></div>
 
     <h2>Administración y política</h2>
@@ -300,7 +358,7 @@
     en el pleno de investidura.<sup>85</sup> Su mandato no se prolongará a partir de las <b>elecciones de 2023</b>.<sup>86</sup></p>
 
     <p>Desde la instauración de la democracia en la <b>Transición</b>, la fuerza política que más tiempo ha gobernado en Gijón ha sido el <b>PSOE</b>, que gobernó de forma 
-    ininterrumpida durante 32 años, entre 1979 y 2011.</p>
+    ininterrumpida durante 32 años, entre 1979 y 2011.</p><br>
 
     <table class="tamañoTabla">
         <caption>Alcaldes desde las elecciones de 1979</caption>
@@ -368,17 +426,13 @@
                 <td class="filaRojo">Federación Socialista Asturiana (FSA-PSOE)</td>
             </tr>
         </tbody>
-    </table>
-
-    <p>
-        <br />
-    </p>
+    </table><br><br>
 
     <h3>Organización territorial</h3>
 
     <p>Según la <b>Ley de Grandes Ciudades</b>, el municipio o concejo de Gijón se divide en 6 distritos, 
     que a su vez está compuestos de 45 barrios o parroquias, según sea zona urbana o rural:<sup>88</sup></p>
-    
+    <br>
     <table class="tamañoTabla">
         <thead> 
             <tr>
@@ -417,17 +471,13 @@
                     Leorio, Poago, Porceyo, Ruedes, San Andrés de los Tacones, Santurio, Serín, Somió, Vega y Veriña.</td>
             </tr>
             </tbody>
-    </table>
-
-        <p>
-            <br /><br /><br /><br />
-        </p>
+    </table><br><br><br><br><br><br><br><br><br>
 
     <div id="Sobre Nosotros"></div>
                     
-                    </div>
+                        </main>
+                    </div> 
                 </div>
-            </main>
 
     <div class="footer">
                 <p>
@@ -437,6 +487,5 @@
                     <i>Autor: Álvaro Fernández Rodríguez</i>
                 </p>
             </div>
-        </div>
     </body>
 </html>

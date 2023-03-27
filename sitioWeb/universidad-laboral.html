@@ -4,31 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilos/estiloGijon.css" title="Color">
+    <link rel="stylesheet" type="text/css" href="estilos/1.css" title="Color">
     <link rel="icon" type="image/x-icon" href="imagenes/gijonFavicom.png">
     <title>Inicio | Universidad Laboral</title>
 </head>
 <body>
-    
-        <div class="header">
-            <h1>Universidad Laboral de Gijón</h1>
+        <div class="wrapper">
+            <header>
+                <h1>Universidad Laboral de Gijón</h1>
+            </header>
         </div>
 
         <div id="Introducción"></div>
 
-        <ul>
-            <li style="float:left"><a class="active" href="">La Laboral</a></li>
-            <li><a href="#Introducción">Introducción</a></li>
-            <li><a href="#Historia">Historia</a></li>
-            <li><a href="#Uso Actual">Uso Actual</a></li>
-            <li style="float:right"><a class="active2" href="#Sobre Nosotros">Sobre Nosotros</a></li>
-        </ul>
+        <nav>
+            <div id="navDatos">
+                <ul>
+                    <li><a class="active" href="">La Laboral</a></li>
+                    <li><a href="#Introducción">Introducción</a></li>
+                    <li><a href="#Historia">Historia</a></li>
+                    <li><a href="#Uso Actual">Uso Actual</a></li>
+                    <li><a class="active2" href="#Sobre Nosotros">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+        </nav>
+        <aside>
+        <form action="tratar-datos.html" method="get">
 
-    <p>La <b>Universidad Laboral de Gijón</b> es un edificio situado en la <b>parroquia</b> de <b>Cabueñes</b> del <b>concejo</b> de <a href="./gijón.html"><b>Gijón</b></a> (<b>Principado de Asturias</b>, <b>España</b>). 
-    Desde su construcción entre <b>1948</b> y <b>1957</b>, y hasta la década de 1980, fue sede de una <b>institución franquista</b> orientada a educar a los hijos de los trabajadores. 
-    En 2007 se reinventó bajo la marca Laboral Ciudad de la Cultura, que engloba equipamientos como la <b>Radiotelevisión del Principado de Asturias</b>, <b>LABoral Centro de Arte
-    y Creación Industrial</b> y la <b>Facultad de Comercio, Turismo y Ciencias Sociales</b> de la <b>Universidad de Oviedo</b>.<sup>1</sup> A su vez está integrada en la <b>Milla del Conocimiento Margarita Salas</b>.<sup>2</sup></p>
-    <p></p>
+            <fieldset class="completa">
+                <p><strong>¿Desea conertar una visita?</strong></p>
+            <fieldset>
+                <legend>Datos del solicitante</legend>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="apellidos" name="apellidos"><br>
+                <br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="pswrd">Contraseña:</label>
+                <input type="text" id="pswrd" name="pswrd">
+                <br><br>
+                <i class="txtForm">Longitud minima de 6 caracteres</i>
+                <br>
+            </fieldset><br>
+    
+            <fieldset>
+                <legend>Razones de la visita</legend>
+                <label for="particular">Guía turistica</label>
+                <input type="radio" id="particular" name="particular">
+                <br>
+                <label for="informativa">Informativa</label>
+                <input type="radio" id="informativa" name="informativa">
+                <br>
+                <label for="empresa">Empresa</label>
+                <input type="radio" id="empresa" name="empresa">
+                <br>
+            </fieldset>
+    
+            <p><strong>Datos sobre la cita</strong></p>
+    
+            <fieldset>
+                <legend>Razones</legend>
+                    <select id="producto" name="producto" multiple="si" size="5">
+                        <optgroup label="Administrativa">
+                            <option value="01" selected="selected">Individual</option>
+                            <option value="02">Grupo</option>
+                        </optgroup>
+                        <optgroup label="Informativa">
+                            <option value="03" selected="selected">Grado Superior</option>
+                            <option value="04">Grado Medio</option>
+                            <option value="05">Grado Básico</option>
+                        </optgroup>
+                    </select>
+            </fieldset><br>
+    
+            <fieldset>
+                <legend>Otros</legend>
+                <textarea rows="5" cols="25" name="observaciones" placeholder="Concrete aqui las razones de su visita."></textarea>
+                <br>
+                <label for="info">Deseo recibir información sobre ofertas y novedades</label>
+                <input type="checkbox" id="info" name="info">
+            </fieldset>
+                <br>
+                <input type="button" value="Aceptar">
+                <input type="reset" value="Borrar">
+            </fieldset>
+        </form>
+    </aside>
+
+    <div id="main">
+    <main>
+
+        <p>La <b>Universidad Laboral de Gijón</b> es un edificio situado en la <b>parroquia</b> de <b>Cabueñes</b> del <b>concejo</b> de <a href="gijon.html"><b>Gijón</b></a> (<b>Principado de Asturias</b>, <b>España</b>). 
+        Desde su construcción entre <b>1948</b> y <b>1957</b>, y hasta la década de 1980, fue sede de una <b>institución franquista</b> orientada a educar a los hijos de los trabajadores. 
+        En 2007 se reinventó bajo la marca Laboral Ciudad de la Cultura, que engloba equipamientos como la <b>Radiotelevisión del Principado de Asturias</b>, <b>LABoral Centro de Arte
+        y Creación Industrial</b> y la <b>Facultad de Comercio, Turismo y Ciencias Sociales</b> de la <b>Universidad de Oviedo</b>.<sup>1</sup> A su vez está integrada en la <b>Milla del Conocimiento Margarita Salas</b>.<sup>2</sup></p>
+        <p></p>
     
     <div id="Historia"></div>
     <p>Se trata de la obra arquitectónica más importante de cuantas se realizaron en Asturias durante el <b>siglo xx</b>. Además, con sus 270 000 m², es el edificio más grande de España.<sup>3</sup> 
@@ -42,11 +114,8 @@
           <img src="imagenes/uniLaboral.jpg" alt="Elogio" width="575" height="475">
         </a>
         <div class="desc">Vista de la Universidad Laboral de Gijón</div>
-    </div>
+    </div><br>
     
-    <p>
-        <br />
-    </p>
 
     <h3>Origen</h3>
 
@@ -63,7 +132,7 @@
     El Ministerio de Trabajo encomendó a la Junta del Patronato de la Fundación la responsabilidad de llevar adelante la obra por Orden de 14 de junio de 1946. 
     Para ello se adquirieron en la <abbr title="N-632"><b>carretera de Gijón a Villaviciosa</b></abbr> unos terrenos con una superficie de 1 544 572 m², 
     de los que 381 551 m² lo fueron mediante el trámite de expropiación forzosa. Otra superficie complementaria, de 1 464 300 m², 
-    se adquirió para la Granja Lloreda, en El Infanzón.</p>
+    se adquirió para la Granja Lloreda, en El Infanzón.</p><br><br>
 
     <h3>Construcción</h3>
 
@@ -106,38 +175,33 @@
 
     <p>En el resto de terrenos pertenecientes a la Fundación «José Antonio Girón», destinados a la Universidad Laboral de Gijón, se han construido todo tipo de instalaciones. 
     Por ejemplo, en la Granja Lloreda se ha construido un campo de <b>golf</b> municipal y parte de la Granja Agronómica de <b>Somió</b> alberga las dependencias del 
-    Instituto de Educación Secundaria Universidad Laboral, mientras que el que fuera convento de las monjas clarisas es actualmente la sede de la <b>Radiotelevisión del Principado de Asturias.</b>
+    Instituto de Educación Secundaria Universidad Laboral,<br><br><br> mientras que el que fuera convento de las monjas clarisas es actualmente la sede de la <b>Radiotelevisión del Principado de Asturias.</b>
     Parte de los terrenos para actividades deportivas son ocupados ahora por el <b>Hospital de Cabueñes</b>, el <b>Tanatorio</b>, el <b>Parque Científico Tecnológico de Gijón</b> y 
-    el <b>campus de Gijón</b> de la <b>Universidad de Oviedo</b>.</p>
-
-
-    <p>La sede de RTA, en el antiguo convento.</p>
+    el <b>campus de Gijón</b> de la <b>Universidad de Oviedo</b>.</p><br>
 
     <p>En el ala norte se ubica la sede de la multinacional <b>alemana</b> <b>ThyssenKrupp</b> Elevator, con su centro mundial <b>I+D+i</b> de la unidad de negocio de escaleras mecánicas, pasillos 
-    rodantes y pasarelas de embarque, con una nave de aproximadamente dos mil metros cuadrados, en la cual se prueban los prototipos de los futuros modelos de la empresa.<sup>13</sup></p>
+    rodantes y pasarelas de embarque, con una nave de aproximadamente dos mil metros cuadrados, en la cual se prueban los prototipos de los futuros modelos de la empresa.<sup>13</sup></p><br>
 
     <p>Destaca también el proyecto para la creación de más de un centenar de miniapartamentos para estudiantes y profesores de la <b>Universidad de Oviedo</b>, a modo de <b>residencia universitaria</b>, 
-    basándose en el actual modelo europeo de los <b>colegios mayores</b> de las grandes universidades. Esta oferta quiere ser ampliada también a los alumnos del centro de formación profesional.</p>
+    basándose en el actual modelo europeo de los <b>colegios mayores</b> de las grandes universidades. Esta oferta quiere ser ampliada también a los alumnos del centro de formación profesional.</p><br>
 
-    <p>La cadena hotelera <b>AC Hotels</b> proyectó la apertura de un hotel de cinco estrellas ocupando la antigua residencia femenina, proyecto suspendido por la crisis económica.<sup>10</sup></p>
+    <p>La cadena hotelera <b>AC Hotels</b> proyectó la apertura de un hotel de cinco estrellas ocupando la antigua residencia femenina, proyecto suspendido por la crisis económica.<sup>10</sup></p><br><br>
 
-    <div id="Sobre Nosotros"></div>
-
-    <p>
-        <br />
-    </p>
-
-    <hr>
-    <p>
-        Esta página se editó por última vez el 2 feb 2023 a las 12:48
-    </p>
-    <p>
-        <i>Autor: Álvaro Fernández Rodríguez</i>
-    </p>
-
-    <p>
-        <br />
-    </p>
-
+    <div id="Sobre Nosotros"></div><br><br><br>
+        
+        </main>
+    </div>
+    
+    
+    <div class="footer">
+        <p>
+            Esta página se editó por última vez el 23 mar 2023 a las 12:13
+        </p>
+        <p>
+            <i>Autor: Álvaro Fernández Rodríguez</i>
+        </p>
+    </div>
+    
+    
 </body>
 </html>
